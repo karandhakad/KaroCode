@@ -1,0 +1,27 @@
+HTML & CSS TOPICS
+
+. Tag
+. Attributes
+. Psuedo classes
+. Element psuedo classes
+. Positions
+. Flex properties
+. Box model
+. Animations
+. trantions
+
+JS TOPICS
+
+. Dstructuring
+. Callback functions
+. Promises
+. API calling
+. Exception handling
+. Async / Sync function
+. Event loop 
+. Closuer
+. Hoisting
+. Static / Dynamic
+. This keyword
+. Dom
+ 

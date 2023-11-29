@@ -1,0 +1,301 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, sans-serif;
+}
+body
+{
+    background-color: #F8F8F8;
+}
+.navBar
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 80px;
+    width: 100%;
+    z-index: 99;
+    background: transparent;
+}
+.navBar .logo,.navBar .menuBar
+{
+    width: 200px;
+}
+.navBar .menuBar
+{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+}
+.navBar .logo h1
+{
+    font-weight: 900;
+    font-size: 23px;
+}
+.navBar .menuBar .menuBtn
+{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.navBar .menuBar .menuIcon
+{
+    font-size: 20px;
+    font-weight: 100;
+    cursor: pointer;
+}
+.navBar .menuBar .menuList
+{
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 200px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    display: none;
+}
+.navBar .menuBar .menuList ul li 
+{
+    list-style: none;
+    line-height: 35px;
+}
+.navBar .menuBar .menuList ul li a
+{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+}
+.navBar .menuBar .menuList ul li a:hover
+{
+    color: #d5c455;
+    cursor: pointer;
+}
+.navBar .menuBar .menuIcon:hover + .menuList
+{
+    display: block;
+}
+
+/* --------------------------------- */
+.flex
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.aboutSection,.skillSection
+{
+    padding: 50px 30px 100px 80px;
+}
+.section .miniTitle
+{
+    font-size: 13px;
+    color: #d5c455;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.section .title
+{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: #222222;
+    padding-bottom: 100px;
+}
+.aboutSection .aboutDetailSec
+{
+    align-items: start;
+}
+.aboutSection .aboutDetailSec .aboutBoxSec,.aboutSection .aboutDetailSec .aboutTextSec
+{
+    width: 50%;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+.aboutSection .aboutDetailSec .aboutBox
+{
+    width: 100%;
+    min-width: 200px;
+    max-width: 48%;
+    background: #fff;
+    padding: 60px 50px;
+    margin-bottom: 20px;
+}
+.aboutSection .aboutDetailSec .aboutBox .boxNumber
+{
+    font-size: 40px;
+    font-weight: 700;
+    color: #d5c455;
+    line-height: 1;   
+    text-align: center;
+}
+.aboutSection .aboutDetailSec .aboutBox .boxText
+{
+    color: #222222;
+    font-weight: 400;
+    margin-top: 10px;  
+    text-align: center; 
+}
+.aboutSection .aboutTextSec .aboutTextSecTitle
+{
+    font-size: 13px;
+    display: block;
+    margin-bottom: 5px;
+    color: #d5c455;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px; 
+}
+.aboutSection .aboutTextSec .aboutTextSecHead
+{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.4; 
+    color: #222222;
+    margin-top: 10px;
+}
+.aboutSection .aboutTextSec .aboutTextSecPara
+{
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #999999; 
+    margin-top: 20px;
+}
+.userDetailBox 
+{
+    padding: 35px 0;
+    align-items: start !important;
+}
+.userDetailBox .userDetails
+{
+    width: 50%;
+}
+.userDetailBox .userDetails ul li
+{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.userDetailBox .userDetails ul li .label,.userDetailBox .userDetails ul li .userInfo
+{
+   display: block;
+   width: 110px; 
+   font-size: 14px;
+   font-weight: 600;
+   color: black; 
+}
+.userDetailBox .userDetails ul li .userInfo
+{
+   color: #d5c455;
+   width: calc(100% - 110px);
+}
+.aboutTextSec .userBtn
+{
+    background: #d5c455;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #fff;
+    padding: 18px 25px;
+    text-decoration: none;
+}
+
+/* --------------------------------- */
+
+.skillSection .progressCont .progressBox
+{
+    padding: 0 20px 0 0;
+    width: 33%;
+    min-width: 300px;
+}
+.skillSection .progressCont .progressBox .progressTitle
+{
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.skillSection .progressCont .progressBox .progress
+{
+    width: 100%;
+    height: 10px;
+    border-radius: 2px;
+    background: rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+.skillSection .progressCont .progressBox .progressBar
+{
+    background: #d5c455;
+    height: 10px;
+    position: relative;
+}
+.skillSection .progressCont .progressBox .progressBar .progressNumber
+{
+    position: absolute;
+    background: red;
+    top: 10px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1040px) {
+    .navBar
+    {
+        position: relative;
+        background-color: #222222;
+        color: white;
+    }
+    .navBar .menuBar .menuBtn .menuIcon
+    {
+        fill: #fff;
+    }
+    .aboutSection
+    {
+        padding: 50px 30px 0 50px;
+    }
+    .userDetailBox .userDetails
+    {
+        width: 100%;
+    }
+
+}
+@media only screen and (max-width: 768px) {
+    
+    .aboutSection .aboutTextSec .aboutTextSecPara
+    {
+        font-size: 12px;
+    }
+    .aboutSection .aboutTextSec .aboutTextSecHead
+    {
+        font-size: 25px;
+    }
+    .aboutDetailSec
+    {
+        align-items: start;
+    }
+}
+@media only screen and (max-width: 650px) {
+    
+    .aboutSection .aboutDetailSec .aboutTextSec
+    {
+        padding-top: 40px;
+    }
+    .aboutSection .aboutDetailSec .aboutBoxSec,.aboutSection .aboutDetailSec .aboutTextSec
+    {
+        width: 100%;
+    }
+}
