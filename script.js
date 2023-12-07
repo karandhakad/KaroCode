@@ -121,31 +121,67 @@
 //     console.log(car[4]);
 
 
-let users = [
-    {
-        name:"ankush",
-        sname:"saxena"
-    },
-    {
-        name:"dheeraj",
-        sname:"jain"
-    }
+
+// let users = [
+//     {
+//         name:"ankush",
+//         sname:"saxena"
+//     },
+//     {
+//         name:"dheeraj",
+//         sname:"jain"
+//     }
+// ]
+
+
+// for(let i=0;i<users.length;i++)
+// {
+//     let dummy = users[i].name.slice(2, users[i].name.length);
+//     let dummys = users[i].sname.slice(users[i].sname.length - 2, users[i].sname.length);
+    
+//     let dummy2 = users[i].name.slice(0,2);
+//     let dummys2 = users[i].sname.slice(0, users[i].sname.length - 2);
+    
+//     let first = dummys + dummy;
+//     let second =  dummys2 + dummy2
+
+//     console.log(first)
+//     console.log(second)
+// }
+
+// ---------------------------------
+
+// users.map((user,i,arr) =>{
+
+//     let dummy = user.name.slice(2,user.name.length);
+//     let dummys = user.sname.slice(user.sname.length-2,user.name.length)
+    
+//     let first = dummys + dummy
+
+//     let dummy2 = user.name.slice(0,2)
+//     let dummys2 = user.sname.slice(0,user.sname.length-2)
+
+//     let second = dummys2 + dummy2
+
+//     console.log(first)
+//     console.log(second)
+// })
+
+
+
+
+// Taking an array of Student object
+let students = [
+	{ id: 1, name: "Anish", sports: "Cricket" },
+	{ id: 2, name: "Smriti", sports: "Basketball" },
+	{ id: 3, name: "Rahul", sports: "Cricket" },
+	{ id: 4, name: "Bakul", sports: "Basketball" },
+	{ id: 5, name: "Nikita", sports: "Hockey" }
 ]
 
-
-for(let i=0;i<users.length;i++)
+let GetStdnt = students.filter(function(student) 
 {
-    let dummy = users[i].name.slice(2, users[i].name.length);
-    let dummys = users[i].sname.slice(users[i].sname.length - 2, users[i].sname.length);
-    
-    let dummy2 = users[i].name.slice(0,2);
-    let dummys2 = users[i].sname.slice(0, users[i].sname.length - 2);
-    
-    let first = dummys + dummy;
-    let second =  dummys2 + dummy2
+    return student.sports.toLowerCase() == "Basketball".toLowerCase();
+})
 
-    console.log(first)
-    console.log(second)
-}
-
-
+console.log(GetStdnt);
