@@ -179,9 +179,31 @@ let students = [
 	{ id: 5, name: "Nikita", sports: "Hockey" }
 ]
 
-let GetStdnt = students.filter(function(student) 
-{
-    return student.sports.toLowerCase() == "Basketball".toLowerCase();
-})
+// let GetStdnt = students.filter(function(student) 
+// {
+//     return student.sports.toLowerCase() == "Basketball".toLowerCase();
+// })
 
-console.log(GetStdnt);
+// console.log(GetStdnt);
+
+function mapData(data)
+{
+    for(let i=0; i<students.length; i++)
+    {
+         let index = i
+         let value = students[i]
+         let array = students
+
+        data(index,value,array)
+    }
+}
+
+
+// mapData()
+
+function mapping(index,value,array)
+{
+    console.log(index,value,array)
+}
+
+mapData(mapping);
